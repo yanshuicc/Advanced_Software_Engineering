@@ -1,5 +1,5 @@
 # 作业说明
-![作业地址](http://chenpei.science)
+[作业地址](http://chenpei.science)
 # note
 
 ### 安装
