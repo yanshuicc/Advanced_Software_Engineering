@@ -1,0 +1,39 @@
+<div>
+<h1>Edit article</h1>
+ 
+<%= form_with(model: @article) do |form| %>
+ 
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+ 
+<% end %>
+ 
+<%= link_to 'Back', articles_path %>
+</div>
+
+<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="100" src="http://yscc.xyz/js/canvas-nest.js"></script>

@@ -1,0 +1,27 @@
+<div>
+<h1>homework2</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @articles %>
+
+  <% if @articles.respond_to?("each")%>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.text %></td>
+        <td><%= link_to '改', edit_article_path(article) %></td>
+        <td><%= link_to '查', article_path(article) %></td>
+		<td><%= link_to '删', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  <%end%>
+  <tr><td><%= link_to '增', new_article_path %></td></tr>
+</table>
+</div>
+
+<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="100" src="http://yscc.xyz/js/canvas-nest.js"></script>
