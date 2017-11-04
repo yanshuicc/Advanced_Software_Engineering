@@ -1,6 +1,5 @@
 # 作业说明
-作业1地址
-作业2地址
+![作业地址](http://chenpei.science)
 # note
 
 ### 安装
