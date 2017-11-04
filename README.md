@@ -3,26 +3,26 @@
 作业2地址
 # note
 
-###安装
+### 安装
 ruby
 sqlite3
 rails
    gem install rails
 
-###新建rails项目
+### 新建rails项目
 rails new Advanced_Software_Engineering
 
-###运行项目
+### 运行项目
 rails server
 
-###生成控制器Welcome
+### 生成控制器Welcome
 rails generate controller Welcome
 
 
 ### Creating the Article model
 rails generate model Article title:string text:text
 
-###数据库迁移
+### 数据库迁移
 db/migrate/YYYYMMDDHHMMSS_create_articles.rb
 
 	class CreateArticles < ActiveRecord::Migration[5.0]
@@ -40,9 +40,9 @@ rails db:migrate
 
 ### Saving data in the controller
 
-def create
-  @article = Article.new(params[:article])
- 
-  @article.save
-  redirect_to @article
-end
+	def create
+	  @article = Article.new(params[:article])
+	 
+	  @article.save
+	  redirect_to @article
+	end
