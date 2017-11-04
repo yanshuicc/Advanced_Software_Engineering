@@ -4,9 +4,12 @@
 
 ### 安装
 ruby
+
 sqlite3
+
 rails
-   gem install rails
+
+gem install rails
 
 ### 新建rails项目
 rails new Advanced_Software_Engineering
